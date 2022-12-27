@@ -1,0 +1,19 @@
+@use "../foundation/index" as *;
+
+.l-header {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0 20px;
+}
+
+.l-header > p {
+  font: {
+    size: 20px;
+    weight: bold;
+  }
+}

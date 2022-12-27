@@ -1,0 +1,30 @@
+$pc_color: rgb(231, 114, 114);
+$tb_color: rgb(66, 205, 240);
+$sp_color: rgb(97, 243, 182);
+
+$pc-width: 1025px;
+$tb-width: 600px;
+
+@mixin screen($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+.sample {
+  font: {
+    size: 20px;
+    weight: bold;
+    style: italic;
+  }
+
+  background-color: $sp_color;
+
+  @include screen($tb-width) {
+    background-color: $tb_color;
+  }
+
+  @include screen($pc-width) {
+    background-color: $pc_color;
+  }
+}

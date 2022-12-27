@@ -1,0 +1,9 @@
+@use "./variable" as *;
+
+body {
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 500px;
+  height: 100vh;
+  color: rgba(53, 50, 50, 0.637);
+}
